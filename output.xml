@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220128 18:50:30.561" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests">
+<suite id="s1-s1" name="addingAnnexure" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\addingAnnexure.robot">
+<test id="s1-s1-t1" name="Add Annexutre">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:50:30.900" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:50:30.900" endtime="20220128 18:50:32.816"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:50:32.816" endtime="20220128 18:50:32.926"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:30.900" endtime="20220128 18:50:32.926"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:32.927" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:50:32.927" endtime="20220128 18:50:33.700"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:33.700" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:50:33.700" endtime="20220128 18:50:33.750"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:33.751" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:50:33.781" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:50:33.812" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:50:33.751" endtime="20220128 18:50:33.812"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:33.812" endtime="20220128 18:50:33.820"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:33.820" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:50:33.820" endtime="20220128 18:50:34.068"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:32.927" endtime="20220128 18:50:34.068"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:34.069" endtime="20220128 18:50:38.964"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:38.965" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:50:38.965" endtime="20220128 18:50:39.172"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:34.068" endtime="20220128 18:50:39.172"/>
+</kw>
+<kw name="Add Annexure" library="corporateRes">
+<kw name="Policy Tile" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:39.173" endtime="20220128 18:50:43.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:43.416" level="INFO">Clicking element '//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/img[1]'.</msg>
+<status status="PASS" starttime="20220128 18:50:43.415" endtime="20220128 18:50:43.460"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:39.173" endtime="20220128 18:50:43.460"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:50:44.472" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220128 18:50:43.461" endtime="20220128 18:50:44.473"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220128 18:50:44.475" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220128 18:50:44.474" endtime="20220128 18:50:44.561"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ANNEXURE-PROCEED}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220128 18:50:49.751" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220128 18:50:49.615" endtime="20220128 18:50:49.751"/>
+</kw>
+<msg timestamp="20220128 18:50:49.754" level="FAIL">Element '//img[@alt='proceedArrow']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220128 18:50:44.561" endtime="20220128 18:50:49.754"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ANNEXURE-PROCEED}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:50:49.754" endtime="20220128 18:50:49.754"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220128 18:50:49.754" endtime="20220128 18:50:49.754"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:50:49.754" endtime="20220128 18:50:49.754"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220128 18:50:49.754" endtime="20220128 18:50:49.754"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:50:49.755" endtime="20220128 18:50:49.755"/>
+</kw>
+<kw name="Document Uploading" library="corporateRes">
+<arg>C:\\Users\\chaitanya.k\\Downloads\\Asset Annexure</arg>
+<status status="NOT RUN" starttime="20220128 18:50:49.755" endtime="20220128 18:50:49.755"/>
+</kw>
+<status status="FAIL" starttime="20220128 18:50:39.173" endtime="20220128 18:50:49.755"/>
+</kw>
+<status status="FAIL" starttime="20220128 18:50:30.899" endtime="20220128 18:50:49.756">Element '//img[@alt='proceedArrow']' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220128 18:50:30.586" endtime="20220128 18:50:49.757"/>
+</suite>
+<suite id="s1-s2" name="addPolicy" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\addPolicy.robot">
+<test id="s1-s2-t1" name="Add Policy">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:50:49.766" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:50:49.766" endtime="20220128 18:50:51.801"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:50:51.801" endtime="20220128 18:50:51.920"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:49.766" endtime="20220128 18:50:51.921"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:51.921" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:50:51.921" endtime="20220128 18:50:52.867"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:52.867" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:50:52.867" endtime="20220128 18:50:52.913"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:52.913" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:50:52.940" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:50:52.968" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:50:52.913" endtime="20220128 18:50:52.968"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:52.968" endtime="20220128 18:50:52.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:52.987" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:50:52.987" endtime="20220128 18:50:53.280"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:51.921" endtime="20220128 18:50:53.280"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ADD-AN-EXISTING-POLICY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:53.280" endtime="20220128 18:50:57.748"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ADD-AN-EXISTING-POLICY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:57.748" level="INFO">Clicking element '//span[normalize-space()='ADD AN EXISTING POLICY']'.</msg>
+<status status="PASS" starttime="20220128 18:50:57.748" endtime="20220128 18:50:57.829"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${PROCEED}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:57.830" endtime="20220128 18:50:57.848"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PROCEED}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:57.849" level="INFO">Clicking element '//span[normalize-space()='Proceed']'.</msg>
+<status status="PASS" starttime="20220128 18:50:57.848" endtime="20220128 18:50:57.931"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:50:57.932" endtime="20220128 18:50:58.380"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:58.380" level="INFO">Clicking element '//button[normalize-space()='Upload Document']'.</msg>
+<status status="PASS" starttime="20220128 18:50:58.380" endtime="20220128 18:50:58.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:50:58.412" level="INFO">Clicking element '//img[@alt='File Input']'.</msg>
+<status status="PASS" starttime="20220128 18:50:58.411" endtime="20220128 18:50:58.445"/>
+</kw>
+<kw name="Document Uploading" library="corporateRes">
+<arg>C:\\Users\\chaitanya.k\\Downloads\\policy</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:50:59.453" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220128 18:50:58.446" endtime="20220128 18:50:59.453"/>
+</kw>
+<kw name="Wait For Active Window" library="AutoItLibrary">
+<arg>WindowTitle=Open</arg>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.</doc>
+<msg timestamp="20220128 18:50:59.992" level="INFO">AutoItLibrary.WaitForActiveWindow(WindowTitle='Open', WindowText='', TimeOut=-1)</msg>
+<msg timestamp="20220128 18:50:59.992" level="INFO">AutoItLibrary.WinWait(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<msg timestamp="20220128 18:50:59.992" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<status status="PASS" starttime="20220128 18:50:59.453" endtime="20220128 18:50:59.992"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>Open</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20220128 18:50:59.993" endtime="20220128 18:51:00.522"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>strSendText= ${FileType}</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220128 18:51:00.523" endtime="20220128 18:51:00.956"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:51:02.961" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220128 18:51:00.956" endtime="20220128 18:51:02.961"/>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>&amp;Open</arg>
+<arg>[CLASS:Button; INSTANCE:1]</arg>
+<arg>LEFT</arg>
+<doc>method ControlClick</doc>
+<status status="PASS" starttime="20220128 18:51:02.962" endtime="20220128 18:51:02.980"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:58.446" endtime="20220128 18:51:02.980"/>
+</kw>
+<status status="PASS" starttime="20220128 18:50:49.765" endtime="20220128 18:51:02.981"/>
+</test>
+<status status="PASS" starttime="20220128 18:50:49.758" endtime="20220128 18:51:02.982"/>
+</suite>
+<suite id="s1-s3" name="addPolicyManually" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\addPolicyManually.robot">
+<test id="s1-s3-t1" name="Adding policy Manually">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:51:02.995" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:51:02.995" endtime="20220128 18:51:04.574"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:51:04.574" endtime="20220128 18:51:04.685"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:02.995" endtime="20220128 18:51:04.685"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:04.685" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:04.685" endtime="20220128 18:51:05.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:05.488" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:51:05.488" endtime="20220128 18:51:05.535"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:05.536" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:51:05.563" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:51:05.591" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:51:05.535" endtime="20220128 18:51:05.591"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:05.591" endtime="20220128 18:51:05.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:05.599" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:51:05.598" endtime="20220128 18:51:05.832"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:04.685" endtime="20220128 18:51:05.833"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ADD-AN-EXISTING-POLICY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:05.833" endtime="20220128 18:51:10.386"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ADD-AN-EXISTING-POLICY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:10.387" level="INFO">Clicking element '//span[normalize-space()='ADD AN EXISTING POLICY']'.</msg>
+<status status="PASS" starttime="20220128 18:51:10.386" endtime="20220128 18:51:10.481"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${PROCEED}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:10.482" endtime="20220128 18:51:10.498"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PROCEED}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:10.499" level="INFO">Clicking element '//span[normalize-space()='Proceed']'.</msg>
+<status status="PASS" starttime="20220128 18:51:10.499" endtime="20220128 18:51:10.605"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ENTER-MANUALLY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:10.606" endtime="20220128 18:51:10.844"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ENTER-MANUALLY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:10.844" level="INFO">Clicking element '//button[normalize-space()='Enter Manually']'.</msg>
+<status status="PASS" starttime="20220128 18:51:10.844" endtime="20220128 18:51:10.877"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:51:11.879" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220128 18:51:10.878" endtime="20220128 18:51:11.879"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SXP-INPUT}</arg>
+<arg>lib</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:11.880" level="INFO">Typing text 'lib' into text field '//textarea[@placeholder='Write your message...']'.</msg>
+<status status="PASS" starttime="20220128 18:51:11.880" endtime="20220128 18:51:11.933"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEND-INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:11.934" level="INFO">Clicking element '//img[@alt='Send']'.</msg>
+<status status="PASS" starttime="20220128 18:51:11.934" endtime="20220128 18:51:11.968"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Liberty General Insurance Ltd.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:11.968" endtime="20220128 18:51:12.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Liberty General Insurance Ltd.']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.198" level="INFO">Clicking element '//button[normalize-space()='Liberty General Insurance Ltd.']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.198" endtime="20220128 18:51:12.241"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Motor Insurance']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:12.242" endtime="20220128 18:51:12.462"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Motor Insurance']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.463" level="INFO">Clicking element '//button[normalize-space()='Motor Insurance']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.463" endtime="20220128 18:51:12.498"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Two-Wheeler']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:12.498" endtime="20220128 18:51:12.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Two-Wheeler']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.728" level="INFO">Clicking element '//button[normalize-space()='Two-Wheeler']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.727" endtime="20220128 18:51:12.774"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SXP-INPUT}</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.775" level="INFO">Typing text '1000' into text field '//textarea[@placeholder='Write your message...']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.775" endtime="20220128 18:51:12.833"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEND-INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.834" level="INFO">Clicking element '//img[@alt='Send']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.834" endtime="20220128 18:51:12.860"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SXP-INPUT}</arg>
+<arg>100000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.861" level="INFO">Typing text '100000' into text field '//textarea[@placeholder='Write your message...']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.861" endtime="20220128 18:51:12.897"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEND-INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:12.897" level="INFO">Clicking element '//img[@alt='Send']'.</msg>
+<status status="PASS" starttime="20220128 18:51:12.897" endtime="20220128 18:51:12.954"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='No']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:12.955" endtime="20220128 18:51:13.196"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='No']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.198" level="INFO">Clicking element '//button[normalize-space()='No']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.198" endtime="20220128 18:51:13.245"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SXP-INPUT}</arg>
+<arg>31-12-2021</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.246" level="INFO">Typing text '31-12-2021' into text field '//textarea[@placeholder='Write your message...']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.245" endtime="20220128 18:51:13.309"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEND-INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.309" level="INFO">Clicking element '//img[@alt='Send']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.309" endtime="20220128 18:51:13.337"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SXP-INPUT}</arg>
+<arg>01-02-2022</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.337" level="INFO">Typing text '01-02-2022' into text field '//textarea[@placeholder='Write your message...']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.337" endtime="20220128 18:51:13.398"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEND-INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.399" level="INFO">Clicking element '//img[@alt='Send']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.399" endtime="20220128 18:51:13.426"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Submit']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:13.426" endtime="20220128 18:51:13.662"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[normalize-space()='Submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.664" level="INFO">Clicking element '//button[normalize-space()='Submit']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.663" endtime="20220128 18:51:13.752"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:13.752" endtime="20220128 18:51:13.989"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-DOCUMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:13.991" level="INFO">Clicking element '//button[normalize-space()='Upload Document']'.</msg>
+<status status="PASS" starttime="20220128 18:51:13.990" endtime="20220128 18:51:14.076"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:14.076" endtime="20220128 18:51:14.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:14.096" level="INFO">Clicking element '//img[@alt='File Input']'.</msg>
+<status status="PASS" starttime="20220128 18:51:14.095" endtime="20220128 18:51:14.153"/>
+</kw>
+<kw name="Document Uploading" library="corporateRes">
+<arg>C:\\Users\\chaitanya.k\\Downloads\\policy</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:51:15.163" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220128 18:51:14.154" endtime="20220128 18:51:15.163"/>
+</kw>
+<kw name="Wait For Active Window" library="AutoItLibrary">
+<arg>WindowTitle=Open</arg>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.</doc>
+<msg timestamp="20220128 18:51:15.725" level="INFO">AutoItLibrary.WaitForActiveWindow(WindowTitle='Open', WindowText='', TimeOut=-1)</msg>
+<msg timestamp="20220128 18:51:15.725" level="INFO">AutoItLibrary.WinWait(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<msg timestamp="20220128 18:51:15.725" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<status status="PASS" starttime="20220128 18:51:15.163" endtime="20220128 18:51:15.725"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>Open</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20220128 18:51:15.725" endtime="20220128 18:51:16.252"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>strSendText= ${FileType}</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220128 18:51:16.252" endtime="20220128 18:51:16.686"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:51:18.694" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220128 18:51:16.687" endtime="20220128 18:51:18.694"/>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>&amp;Open</arg>
+<arg>[CLASS:Button; INSTANCE:1]</arg>
+<arg>LEFT</arg>
+<doc>method ControlClick</doc>
+<status status="PASS" starttime="20220128 18:51:18.694" endtime="20220128 18:51:18.707"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:14.154" endtime="20220128 18:51:18.707"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:02.994" endtime="20220128 18:51:18.708"/>
+</test>
+<status status="PASS" starttime="20220128 18:51:02.984" endtime="20220128 18:51:18.709"/>
+</suite>
+<suite id="s1-s4" name="claimHistory" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\claimHistory.robot">
+<test id="s1-s4-t1" name="Claim History">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:51:18.719" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:51:18.719" endtime="20220128 18:51:20.430"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:51:20.430" endtime="20220128 18:51:20.547"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:18.719" endtime="20220128 18:51:20.547"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:20.548" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:20.548" endtime="20220128 18:51:21.341"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:21.342" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:51:21.341" endtime="20220128 18:51:21.402"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:21.402" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:51:21.431" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:51:21.481" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:51:21.402" endtime="20220128 18:51:21.481"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:21.481" endtime="20220128 18:51:21.490"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:21.490" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:51:21.490" endtime="20220128 18:51:21.745"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:20.548" endtime="20220128 18:51:21.745"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:21.746" endtime="20220128 18:51:26.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:26.566" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:51:26.566" endtime="20220128 18:51:26.747"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:21.746" endtime="20220128 18:51:26.747"/>
+</kw>
+<kw name="Claim History" library="corporateRes">
+<kw name="Policy Tile" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:26.748" endtime="20220128 18:51:31.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:31.346" level="INFO">Clicking element '//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/img[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:31.346" endtime="20220128 18:51:31.392"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:26.747" endtime="20220128 18:51:31.392"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${CLAIM-HISTORY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:31.393" endtime="20220128 18:51:31.843"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLAIM-HISTORY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:31.844" level="INFO">Clicking element '//span[normalize-space()='Claim History']'.</msg>
+<status status="PASS" starttime="20220128 18:51:31.843" endtime="20220128 18:51:31.899"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:26.747" endtime="20220128 18:51:31.899"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:18.719" endtime="20220128 18:51:31.900"/>
+</test>
+<status status="PASS" starttime="20220128 18:51:18.710" endtime="20220128 18:51:31.901"/>
+</suite>
+<suite id="s1-s5" name="Endorsement" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\endorsement.robot">
+<test id="s1-s5-t1" name="Adding Endorsement">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:51:31.914" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:51:31.913" endtime="20220128 18:51:33.713"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:51:33.713" endtime="20220128 18:51:33.830"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:31.913" endtime="20220128 18:51:33.831"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:33.831" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:33.831" endtime="20220128 18:51:34.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:34.698" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:51:34.698" endtime="20220128 18:51:34.755"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:34.755" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:51:34.784" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:51:34.816" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:51:34.755" endtime="20220128 18:51:34.816"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:34.817" endtime="20220128 18:51:34.826"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:34.826" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:51:34.826" endtime="20220128 18:51:35.127"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:33.831" endtime="20220128 18:51:35.128"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:35.128" endtime="20220128 18:51:39.971"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:39.972" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:51:39.972" endtime="20220128 18:51:40.276"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:35.128" endtime="20220128 18:51:40.277"/>
+</kw>
+<kw name="Add Endorsement" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220128 18:51:45.421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-156.png"&gt;&lt;img src="selenium-screenshot-156.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220128 18:51:45.292" endtime="20220128 18:51:45.421"/>
+</kw>
+<msg timestamp="20220128 18:51:45.422" level="FAIL">Element '//*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220128 18:51:40.277" endtime="20220128 18:51:45.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:51:45.422" endtime="20220128 18:51:45.422"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${REQUEST-ENDORSEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220128 18:51:45.422" endtime="20220128 18:51:45.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REQUEST-ENDORSEMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:51:45.422" endtime="20220128 18:51:45.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 18:51:45.422" endtime="20220128 18:51:45.422"/>
+</kw>
+<kw name="Document Uploading" library="corporateRes">
+<arg>C:\\Users\\chaitanya.k\\Downloads\\endrosement</arg>
+<status status="NOT RUN" starttime="20220128 18:51:45.422" endtime="20220128 18:51:45.422"/>
+</kw>
+<status status="FAIL" starttime="20220128 18:51:40.277" endtime="20220128 18:51:45.423"/>
+</kw>
+<status status="FAIL" starttime="20220128 18:51:31.913" endtime="20220128 18:51:45.423">Element '//*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220128 18:51:31.903" endtime="20220128 18:51:45.424"/>
+</suite>
+<suite id="s1-s6" name="Login" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\login.robot">
+<test id="s1-s6-t1" name="Login User">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:51:45.436" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:51:45.435" endtime="20220128 18:51:47.059"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:51:47.059" endtime="20220128 18:51:47.185"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:45.435" endtime="20220128 18:51:47.188"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:47.193" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:47.192" endtime="20220128 18:51:48.163"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:48.164" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:51:48.163" endtime="20220128 18:51:48.255"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:48.256" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:51:48.301" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:51:48.342" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:51:48.256" endtime="20220128 18:51:48.342"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:48.342" endtime="20220128 18:51:48.357"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:48.357" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:51:48.357" endtime="20220128 18:51:48.693"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:47.190" endtime="20220128 18:51:48.693"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:45.434" endtime="20220128 18:51:48.694"/>
+</test>
+<status status="PASS" starttime="20220128 18:51:45.425" endtime="20220128 18:51:48.695"/>
+</suite>
+<suite id="s1-s7" name="renewHistory" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\renewHistory.robot">
+<test id="s1-s7-t1" name="Renew History">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:51:48.706" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:51:48.706" endtime="20220128 18:51:50.392"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:51:50.392" endtime="20220128 18:51:50.510"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:48.705" endtime="20220128 18:51:50.510"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:50.512" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:51:50.511" endtime="20220128 18:51:51.565"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:51.567" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:51:51.566" endtime="20220128 18:51:51.659"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:51.660" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:51:51.710" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:51:51.762" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:51:51.659" endtime="20220128 18:51:51.762"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:51.763" endtime="20220128 18:51:51.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:51.780" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:51:51.779" endtime="20220128 18:51:52.148"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:50.511" endtime="20220128 18:51:52.149"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:52.150" endtime="20220128 18:51:56.941"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:51:56.942" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:51:56.942" endtime="20220128 18:51:57.250"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:52.150" endtime="20220128 18:51:57.251"/>
+</kw>
+<kw name="Renew History" library="corporateRes">
+<kw name="Policy Tile" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:51:57.253" endtime="20220128 18:52:01.993"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POLICY-TILE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:01.994" level="INFO">Clicking element '//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/img[1]'.</msg>
+<status status="PASS" starttime="20220128 18:52:01.993" endtime="20220128 18:52:02.042"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:57.252" endtime="20220128 18:52:02.042"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${RENEW-HISTORY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:02.042" endtime="20220128 18:52:02.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RENEW-HISTORY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:02.496" level="INFO">Clicking element '//span[normalize-space()='Renew History']'.</msg>
+<status status="PASS" starttime="20220128 18:52:02.495" endtime="20220128 18:52:02.537"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:57.251" endtime="20220128 18:52:02.537"/>
+</kw>
+<status status="PASS" starttime="20220128 18:51:48.705" endtime="20220128 18:52:02.538"/>
+</test>
+<status status="PASS" starttime="20220128 18:51:48.696" endtime="20220128 18:52:02.538"/>
+</suite>
+<suite id="s1-s8" name="uploadPolicy" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\uploadPolicy.robot">
+<test id="s1-s8-t1" name="Upload Policy">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:52:02.548" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:52:02.547" endtime="20220128 18:52:04.325"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:52:04.326" endtime="20220128 18:52:04.440"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:02.547" endtime="20220128 18:52:04.440"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:04.441" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:52:04.441" endtime="20220128 18:52:05.862"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:05.863" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:52:05.863" endtime="20220128 18:52:05.917"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:05.918" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:52:05.948" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:52:05.975" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:52:05.917" endtime="20220128 18:52:05.975"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:05.976" endtime="20220128 18:52:05.984"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:05.985" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:52:05.984" endtime="20220128 18:52:06.492"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:04.441" endtime="20220128 18:52:06.492"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:06.493" endtime="20220128 18:52:11.651"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:11.652" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:52:11.651" endtime="20220128 18:52:12.057"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:06.492" endtime="20220128 18:52:12.058"/>
+</kw>
+<kw name="Upload Policy" library="corporateRes">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220128 18:52:12.061" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220128 18:52:12.060" endtime="20220128 18:52:12.072"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-POLICY}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:12.073" endtime="20220128 18:52:16.682"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-POLICY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:16.683" level="INFO">Clicking element '//span[normalize-space()='Upload Policy']'.</msg>
+<status status="PASS" starttime="20220128 18:52:16.682" endtime="20220128 18:52:16.807"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:16.807" endtime="20220128 18:52:16.823"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UPLOAD-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:16.824" level="INFO">Clicking element '//img[@alt='File Input']'.</msg>
+<status status="PASS" starttime="20220128 18:52:16.823" endtime="20220128 18:52:16.868"/>
+</kw>
+<kw name="Document Uploading" library="corporateRes">
+<arg>C:\\Users\\chaitanya.k\\Downloads\\policy</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:52:17.885" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220128 18:52:16.870" endtime="20220128 18:52:17.885"/>
+</kw>
+<kw name="Wait For Active Window" library="AutoItLibrary">
+<arg>WindowTitle=Open</arg>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.</doc>
+<msg timestamp="20220128 18:52:18.432" level="INFO">AutoItLibrary.WaitForActiveWindow(WindowTitle='Open', WindowText='', TimeOut=-1)</msg>
+<msg timestamp="20220128 18:52:18.432" level="INFO">AutoItLibrary.WinWait(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<msg timestamp="20220128 18:52:18.432" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Open', WindowText='', TimeOut=60)</msg>
+<status status="PASS" starttime="20220128 18:52:17.885" endtime="20220128 18:52:18.432"/>
+</kw>
+<kw name="Win Activate" library="AutoItLibrary">
+<arg>Open</arg>
+<doc>method WinActivate</doc>
+<status status="PASS" starttime="20220128 18:52:18.433" endtime="20220128 18:52:18.949"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>strSendText= ${FileType}</arg>
+<doc>method Send</doc>
+<status status="PASS" starttime="20220128 18:52:18.949" endtime="20220128 18:52:19.387"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 18:52:21.395" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220128 18:52:19.387" endtime="20220128 18:52:21.395"/>
+</kw>
+<kw name="Control Click" library="AutoItLibrary">
+<arg>Open</arg>
+<arg>&amp;Open</arg>
+<arg>[CLASS:Button; INSTANCE:1]</arg>
+<arg>LEFT</arg>
+<doc>method ControlClick</doc>
+<status status="PASS" starttime="20220128 18:52:21.395" endtime="20220128 18:52:21.411"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:16.868" endtime="20220128 18:52:21.412"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:12.059" endtime="20220128 18:52:21.412"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:02.547" endtime="20220128 18:52:21.412"/>
+</test>
+<status status="PASS" starttime="20220128 18:52:02.539" endtime="20220128 18:52:21.414"/>
+</suite>
+<suite id="s1-s9" name="viewPolicies" source="C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\viewPolicies.robot">
+<test id="s1-s9-t1" name="View Policies">
+<kw name="Open Website" library="corporateRes">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 18:52:21.428" level="INFO">Opening browser 'chrome' to base url 'https://uat.paisaplan.in/individual'.</msg>
+<status status="PASS" starttime="20220128 18:52:21.427" endtime="20220128 18:52:23.174"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 18:52:23.174" endtime="20220128 18:52:23.294"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:21.426" endtime="20220128 18:52:23.295"/>
+</kw>
+<kw name="Login User" library="corporateRes">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:23.296" level="INFO">Clicking button '//html/body/div/div[2]/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220128 18:52:23.296" endtime="20220128 18:52:24.152"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>suneel.k</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:24.153" level="INFO">Typing text 'suneel.k' into text field 'id = username'.</msg>
+<status status="PASS" starttime="20220128 18:52:24.152" endtime="20220128 18:52:24.220"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>test</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:24.221" level="INFO">Typing password into text field 'id = password'.</msg>
+<msg timestamp="20220128 18:52:24.259" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220128 18:52:24.308" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220128 18:52:24.220" endtime="20220128 18:52:24.308"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:24.308" endtime="20220128 18:52:24.321"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:24.322" level="INFO">Clicking element '//input[@id='kc-login']'.</msg>
+<status status="PASS" starttime="20220128 18:52:24.321" endtime="20220128 18:52:24.639"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:23.295" endtime="20220128 18:52:24.640"/>
+</kw>
+<kw name="View all" library="corporateRes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220128 18:52:24.641" endtime="20220128 18:52:29.650"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIEW-ALL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 18:52:29.651" level="INFO">Clicking element '//a[normalize-space()='ViewAll']'.</msg>
+<status status="PASS" starttime="20220128 18:52:29.651" endtime="20220128 18:52:29.889"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:24.640" endtime="20220128 18:52:29.889"/>
+</kw>
+<status status="PASS" starttime="20220128 18:52:21.426" endtime="20220128 18:52:29.890"/>
+</test>
+<status status="PASS" starttime="20220128 18:52:21.416" endtime="20220128 18:52:29.891"/>
+</suite>
+<status status="FAIL" starttime="20220128 18:50:30.563" endtime="20220128 18:52:29.893"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="addingAnnexure">Tests.addingAnnexure</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="addPolicy">Tests.addPolicy</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="addPolicyManually">Tests.addPolicyManually</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="claimHistory">Tests.claimHistory</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="Endorsement">Tests.Endorsement</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="Login">Tests.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="renewHistory">Tests.renewHistory</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s8" name="uploadPolicy">Tests.uploadPolicy</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s9" name="viewPolicies">Tests.viewPolicies</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220128 18:51:45.429" level="ERROR">Error in file 'C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\Corporate\Tests\login.robot' on line 2: Resource file '..\..\Resources\corporateRes.robot' does not exist.</msg>
+</errors>
+</robot>
