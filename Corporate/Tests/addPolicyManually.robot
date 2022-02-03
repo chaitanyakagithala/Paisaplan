@@ -1,6 +1,8 @@
 *** Settings ***
 Resource    ../Resources/corporateRes.robot
+Resource    C:\Users\chaitanya.k\PycharmProjects\PaisaPlan\venv\Lib\site-packages\robotframework_metrics\robotmetrics.py
 Library    SeleniumLibrary
+
 *** Test Cases ***
 Adding policy Manually
           Open Website
@@ -37,5 +39,3 @@ Adding policy Manually
           Wait Until Page Contains Element       ${UPLOAD-BUTTON}
           Click Element                          ${UPLOAD-BUTTON}
           Document Uploading               C:\\Users\\chaitanya.k\\Downloads\\policy
-
-
