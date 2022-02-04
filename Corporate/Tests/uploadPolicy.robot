@@ -7,3 +7,4 @@ Upload Policy
        Login User
        View all
        Upload Policy
+       Choose File    locator    file_path

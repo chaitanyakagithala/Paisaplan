@@ -77,28 +77,30 @@ Add Annexure
       Click Element                         ${ANNEXURE-PROCEED}
       Wait Until Page Contains Element      ${UPLOAD-DOCUMENT}
       Click Element                         ${UPLOAD-DOCUMENT}
-      Wait Until Page Contains Element      ${UPLOAD-BUTTON}
-      Click Element                         ${UPLOAD-BUTTON}
-      Document Uploading                C:\\Users\\chaitanya.k\\Downloads\\Asset Annexure
+#      Wait Until Page Contains Element      ${UPLOAD-BUTTON}
+#      Click Element                         ${UPLOAD-BUTTON}
+     Choose File     id=file-input           C:\\Users\\chaitanya.k\\Downloads\\Asset Annexure.xlsx
 Add Endorsement
 #       Policy Tile
-#       Wait Until Page Contains Element    ${EDORSEMENT}
-#       Click Element                       ${EDORSEMENT}
-#       Sleep    1s
+        Wait Until Page Contains Element      //html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[2]/div[1]/div[1]/div[1]/div[1]
+        Click Element          //html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[2]/div[1]/div[1]/div[1]/div[1]
+       Wait Until Page Contains Element    ${EDORSEMENT}
+       Click Element                       ${EDORSEMENT}
+       Sleep    1s
 #       Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
 #       Wait Until Page Contains Element  ${EDORSEMENT}
 #       Click Element                     ${EDORSEMENT}
-       Wait Until Page Contains Element     //*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button
-       Click Element                        //*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/a[3]/div/div/div/div[5]/div[2]/a/button
+#       Wait Until Page Contains Element     /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[4]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]/button[1]/span[1]
+#       Click Element                       /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[4]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]/button[1]/span[1]
        Wait Until Page Contains Element   ${REQUEST-ENDORSEMENT}
        Click Element                       ${REQUEST-ENDORSEMENT}
-#       Wait Until Page Contains Element    ${POLICY-CORRECTIONS}
-#       Click Element                       ${POLICY-CORRECTIONS}
+       Wait Until Page Contains Element    ${POLICY-CORRECTIONS}
+       Click Element                       ${POLICY-CORRECTIONS}
 #       Wait Until Page Contains Element    //button[normalize-space()='Upload']
 #       Click Element                       //button[normalize-space()='Upload']
 #       Wait Until Page Contains Element    ${UPLOAD-BUTTON}
-       Click Element           ${UPLOAD-BUTTON}
-       Document Uploading      C:\\Users\\chaitanya.k\\Downloads\\endrosement
+#       Click Element           ${UPLOAD-BUTTON}
+      Choose File    id=file-input       C:\\Users\\chaitanya.k\\Downloads\\endrosement.xlsx
 Claim History
        Policy Tile
        Wait Until Page Contains Element    ${CLAIM-HISTORY}

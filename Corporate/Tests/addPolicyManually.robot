@@ -38,4 +38,4 @@ Adding policy Manually
           Click Element                          ${UPLOAD-DOCUMENT}
           Wait Until Page Contains Element       ${UPLOAD-BUTTON}
           Click Element                          ${UPLOAD-BUTTON}
-          Document Uploading               C:\\Users\\chaitanya.k\\Downloads\\policy
+          Choose File    id=file-input         C:\\Users\\chaitanya.k\\Downloads\\policy.pdf
