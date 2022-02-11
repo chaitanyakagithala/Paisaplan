@@ -11,6 +11,6 @@ Add Policy
       Click Element                       ${PROCEED}
       Wait Until Page Contains Element    ${UPLOAD-DOCUMENT}
       Click Element        ${UPLOAD-DOCUMENT}
-      Choose File    id=file-input         C:\\Users\\chaitanya.k\\Downloads\\policy.pdf
+      Upload File
 #      Click Element        ${UPLOAD-BUTTON}
 #      Document Uploading          C:\\Users\\chaitanya.k\\Downloads\\policy

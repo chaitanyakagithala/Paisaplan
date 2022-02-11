@@ -1,6 +1,5 @@
 *** Settings ***
-Library         SeleniumLibrary
-Library        AutoItLibrary
+Library   SeleniumLibrary
 *** Variables ***
 # Browsers
 ${URL}            https://uat.paisaplan.in/corporate
@@ -64,8 +63,8 @@ Upload Policy
      Wait Until Page Contains Element   ${UPLOAD-POLICY}
      Click Element        ${UPLOAD-POLICY}
      Wait Until Page Contains Element    ${UPLOAD-BUTTON}
-     Click Element           ${UPLOAD-BUTTON}
-     Document Uploading        C:\\Users\\chaitanya.k\\Downloads\\policy
+#     Click Element           ${UPLOAD-BUTTON}
+     Choose File    id=file-input            ${CURDIR}${/}policy.pdf
 Policy Tile
       Wait Until Page Contains Element     ${POLICY-TILE}
       Click Element                        ${POLICY-TILE}
@@ -79,7 +78,7 @@ Add Annexure
       Click Element                         ${UPLOAD-DOCUMENT}
 #      Wait Until Page Contains Element      ${UPLOAD-BUTTON}
 #      Click Element                         ${UPLOAD-BUTTON}
-     Choose File     id=file-input           C:\\Users\\chaitanya.k\\Downloads\\Asset Annexure.xlsx
+     Choose File     id=file-input        ${CURDIR}${/}Asset Annexure.xlsx
 Add Endorsement
 #       Policy Tile
         Wait Until Page Contains Element      //html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[2]/div[1]/div[1]/div[1]/div[1]
@@ -100,7 +99,7 @@ Add Endorsement
 #       Click Element                       //button[normalize-space()='Upload']
 #       Wait Until Page Contains Element    ${UPLOAD-BUTTON}
 #       Click Element           ${UPLOAD-BUTTON}
-      Choose File    id=file-input       C:\\Users\\chaitanya.k\\Downloads\\endrosement.xlsx
+      Choose File    id=file-input       ${CURDIR}${/}file-1640153796596.xlsx
 Claim History
        Policy Tile
        Wait Until Page Contains Element    ${CLAIM-HISTORY}
@@ -109,14 +108,14 @@ Renew History
        Policy Tile
        Wait Until Page Contains Element    ${RENEW-HISTORY}
        Click Element       ${RENEW-HISTORY}
-Document Uploading
-      [Arguments]        ${FileType}
-       Sleep    1s
-       Wait For Active Window    WindowTitle=Open
-       Win Activate   Open
-       Send  strSendText= ${FileType}
-       Sleep    2s
-       Control Click    Open   &Open   [CLASS:Button; INSTANCE:1]  LEFT
+#Document Uploading
+#      [Arguments]        ${FileType}
+#       Sleep    1s
+#       Wait For Active Window    WindowTitle=Open
+#       Win Activate   Open
+#       Send  strSendText= ${FileType}
+#       Sleep    2s
+#       Control Click    Open   &Open   [CLASS:Button; INSTANCE:1]  LEFT
 Open Camunda
      Open Camunda Website
      Input Text       ${USERNAME}      test
@@ -129,3 +128,6 @@ Open Camunda
      Click Element                        ${ALL-TASKS}
      Wait Until Page Contains Element     ${SELECT-TASK}
      Click Element                        ${SELECT-TASK}
+Upload File
+     Choose File    id=file-input            ${CURDIR}${/}policy.pdf
+
