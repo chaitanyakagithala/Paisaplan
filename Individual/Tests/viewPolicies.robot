@@ -1,10 +1,8 @@
 *** Settings ***
 Resource    ../Resources/corporateRes.robot
-Library  SeleniumLibrary
-
+Library         SeleniumLibrary
 *** Test Cases ***
-Add Annexutre
+View Policies
        Open Website
        Login User
        View all
-       Add Annexure

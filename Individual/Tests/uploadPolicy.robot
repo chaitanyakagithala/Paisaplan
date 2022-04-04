@@ -1,8 +1,9 @@
 *** Settings ***
 Resource    ../Resources/corporateRes.robot
-Library       SeleniumLibrary
+Library   SeleniumLibrary
 *** Test Cases ***
-Login User
+Upload Policy
        Open Website
        Login User
-
+       View all
+       Upload Policy

@@ -17,12 +17,10 @@ Adding policy Manually
           Sleep      1s
           Input Text        ${SXP-INPUT}          hdfc
           Click Element     ${SEND-INPUT}
-          Wait Until Page Contains Element       //button[@value='HDFC ERGO General Insurance Co.Ltd.::14::GENERAL']
-          Click Element                         //button[@value='HDFC ERGO General Insurance Co.Ltd.::14::GENERAL']
-          Wait Until Page Contains Element      //button[@value='Property Insurance::19::General Insurance']
-          Click Element                         //button[@value='Property Insurance::19::General Insurance']
-          Wait Until Page Contains Element      //button[@value='Contractors All Risk ::Contractors All Risk']
-          Click Element                         //button[@value='Contractors All Risk ::Contractors All Risk']
+          Wait Until Page Contains Element       //button[@value='HDFC Life Insurance Co. Ltd::45::LIFE']
+          Click Element                         //button[@value='HDFC Life Insurance Co. Ltd::45::LIFE']
+          Wait Until Page Contains Element      //button[@value='Term Life Insurance::1::Life Insurance']
+          Click Element                         //button[@value='Term Life Insurance::1::Life Insurance']
           Input Text             ${SXP-INPUT}         1000
           Click Element          ${SEND-INPUT}
           Input Text             ${SXP-INPUT}         100000

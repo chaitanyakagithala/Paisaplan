@@ -15,9 +15,11 @@ Add Policy
       Click Element                      ${PROCEED}
       Wait Until Page Contains Element   ${Simply-Upload-Policy}
       Click Element                      ${Simply-Upload-Policy}
-      Sleep  1s
+      Sleep   1s
       Upload File
       Wait Until Page Contains Element     ${No}
-      Close Window
+      Click element                        ${No}
+      Wait Until Page Contains Element   //html/body/div[4]/div[2]/div[2]/div[10]/p/a
+      Click Element                      //html/body/div[4]/div[2]/div[2]/div[10]/p/a
 
 

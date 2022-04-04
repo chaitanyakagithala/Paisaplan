@@ -2,7 +2,7 @@
 Library   SeleniumLibrary
 *** Variables ***
 # Browsers
-${URL}            https://uat.paisaplan.in/corporate
+${URL}            https://uat.paisaplan.in/individual
 ${CAMUNDA_URL}    https://dev.paisaplan.in/camunda
 ${BROWSER}         chrome
 # Register
@@ -29,7 +29,7 @@ ${ENTER-MANUALLY}              //button[@value='EM']
 ${SXP-INPUT}                  //input[@placeholder='Enter your Message here...']
 ${SEND-INPUT}               //img[@src='http://sxp-stage.techsophy.com/assets/images/send.png']
 ${VIEW-ALL}                  //a[normalize-space()='ViewAll']
-${UPLOAD-POLICY}            //span[text()="Upload Policy"]
+${UPLOAD-POLICY}             //span[text()="Upload Policy"]
 ${Upload-Document}            //button[@value='UPLOAD']
 ${POLICY-TILE}            //html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/img[1]
 ${ANNEXURE-PROCEED}   //img[@alt='proceedArrow']
@@ -57,7 +57,8 @@ Open Camunda Website
      Maximize Browser Window
 Login User
      Click Button     ${LOGIN-BUTTON}
-     Input Text       ${USERNAME}       chaitanyak939@gmail.com
+     Input Text       ${USERNAME}      chaitanya.k@techsophy.com
+#     koondla.naidu@gmail.com    chaitanya.k@techsophy.com
      Input Password   ${PASSWORD}      test
      Wait Until Page Contains Element    ${SUBMIT}
      Click Element    ${SUBMIT}
@@ -72,34 +73,23 @@ Upload Policy
      Sleep  5s
      Wait Until Page Contains Element    //div[contains(text(),'Your Policy Document is uploaded successfully. We ')]//b[contains(text(),'...view more')]
      Click Element                        //div[contains(text(),'Your Policy Document is uploaded successfully. We ')]//b[contains(text(),'...view more')]
-     Wait Until Page Contains Element   //a[@href='https://uat.paisaplan.in/corporate/dashboard/']
-     Click Element                        //a[@href='https://uat.paisaplan.in/corporate/dashboard/']
+     Wait Until Page Contains Element     //a[normalize-space()='Click Here']
+     Click Element                        //a[normalize-space()='Click Here']
 Policy Tile Assert
-      Wait Until Page Contains Element     //p[text()="Accidental Insurance"]
+      Wait Until Page Contains Element     //p[text()="Endowment Policy"]
       Click Element                       //p[text()="Endowment Policy"]
 Policy Tile Employe
       Wait Until Page Contains Element      //p[text()="Group Health Insurance"]
       Click Element                       //p[text()="Group Health Insurance"]
 Claim History
-       Policy Tile Employe
+       Policy Tile Assert
        Wait Until Page Contains Element    ${CLAIM-HISTORY}
        Click Element       ${CLAIM-HISTORY}
 Renew History
        Policy Tile Assert
        Wait Until Page Contains Element    ${RENEW-HISTORY}
        Click Element       ${RENEW-HISTORY}
-Open Camunda
-     Open Camunda Website
-     Input Text       ${USERNAME}      test
-     Input Password   ${PASSWORD}      test
-     Wait Until Page Contains Element    ${SUBMIT}
-     Click Element    ${SUBMIT}
-     Wait Until Page Contains Element     ${TASK-LIST}
-     Click Element                        ${TASK-LIST}
-     Wait Until Page Contains Element     ${ALL-TASKS}
-     Click Element                        ${ALL-TASKS}
-     Wait Until Page Contains Element     ${SELECT-TASK}
-     Click Element                        ${SELECT-TASK}
+
 Upload File
      Choose File    id=uploadInput            ${CURDIR}${/}policy.pdf
 
@@ -120,7 +110,7 @@ Upload Fresh Annexurre
       Wait Until Page Contains Element      ${Upload-Document}
       Click Element                         ${Upload-Document}
       Choose File     id=uploadInput        ${CURDIR}${/}EA.xlsx
-      Wait Until Page Contains Element     //b[text()="...view more"]
+      Wait Until Page Coontains Element     //b[text()="...view more"]
       Click Element                         //b[text()="...view more"]
       Wait Until Page Contains Element      //html/body/div[4]/div[2]/div[2]/div[7]/p/div/a
       Click Element                         //html/body/div[4]/div[2]/div[2]/div[7]/p/div/a
@@ -136,7 +126,7 @@ Upload Fresh Assert
       Click Element                         ${Upload-Document}
       sleep   3s
       Choose File     id=uploadInput        ${CURDIR}${/}AssertAnnex.xlsx
-      Wait Until Page Contains Element     //b[text()="...view more"]
+      Wait Until Page Coontains Element     //b[text()="...view more"]
       Click Element                         //b[text()="...view more"]
       Wait Until Page Contains Element      //html/body/div[4]/div[2]/div[2]/div[7]/p/div/a
       Click Element                         //html/body/div[4]/div[2]/div[2]/div[7]/p/div/a
@@ -144,36 +134,29 @@ Add endrosement for policy corrections
       Choose File     id=uploadInput        ${CURDIR}${/}PolicyCorrections.xlsx
       Wait Until Page Contains Element     //b[text()="...view more"]
       Click Element                         //b[text()="...view more"]
+      Sleep   1s
       Wait Until Page Contains Element      //a[normalize-space()='Click Here']
       Click Element                         //a[normalize-space()='Click Here']
-Add endrosement for Employe addition/deletion
-      Choose File     id=uploadInput        ${CURDIR}${/}AssertDelAdd.xlsx
-       Wait Until Page Contains Element     //b[text()="...view more"]
-      Click Element                         //b[text()="...view more"]
-      Wait Until Page Contains Element      //a[normalize-space()='Click Here']
-      Click Element                         //a[normalize-space()='Click Here']
-Add endrosement for Employe assert details
-       Choose File     id=uploadInput        ${CURDIR}${/}AssertDetails.xlsx
-       Wait Until Page Contains Element     //b[text()="...view more"]
-      Click Element                         //b[text()="...view more"]
-      Wait Until Page Contains Element      //a[normalize-space()='Click Here']
-      Click Element                         //a[normalize-space()='Click Here']
+
 Update endorsement
    Wait Until Page Contains Element       ${Re-Request-endorsement}
    Click Element                          ${Re-Request-endorsement}
 New endorsement
    Wait Until Page Contains Element      ${REQUEST-ENDORSEMENT}
    Click Element                          ${REQUEST-ENDORSEMENT}
+
+
 Multiple Polices
       Wait Until Page Contains Element    ${ENTER-MANUALLY}
       Click Element          ${ENTER-MANUALLY}
       Sleep      1s
       Input Text        ${SXP-INPUT}          aditya
       Click Element     ${SEND-INPUT}
-      Wait Until Page Contains Element       //button[@value='Aditya Birla Health Insurance Co. Ltd.::2::GENERAL']
-      Click Element                        //button[@value='Aditya Birla Health Insurance Co. Ltd.::2::GENERAL']
-      Wait Until Page Contains Element      //button[@value='Marine Insurance::17::General Insurance']
-      Click Element                         //button[@value='Marine Insurance::17::General Insurance']
+      Wait Until Page Contains Element       //button[@value='Aditya Birla SunLife Insurance Co. Ltd.::35::LIFE']
+      Click Element                        //button[@value='Aditya Birla SunLife Insurance Co. Ltd.::35::LIFE']
+      Wait Until Page Contains Element     //button[@value='Retirement Plans::5::Life Insurance']
+      Click Element                         //button[@value='Retirement Plans::5::Life Insurance']
+
       Input Text             ${SXP-INPUT}         1000
       Click Element          ${SEND-INPUT}
       Input Text             ${SXP-INPUT}         100000
@@ -188,6 +171,7 @@ Multiple Polices
       Click Element                            //button[@value='Submit']
       Wait Until Page Contains Element         //button[@value='upload']
       Click Element                             //button[@value='upload']
+      Sleep  2s
       Upload File
       Wait Until Page Contains Element     ${No}
       Click Element                        ${No}
@@ -195,3 +179,28 @@ Multiple Polices
       Click Element                           //a[normalize-space()='Click Here to go to the home screen']
       sleep     5s
       Close Window
+Guaranteed Tax
+      Wait Until Page Contains Element      //t[normalize-space()='Guaranteed Tax Free Payout for 25 Years']
+      Click Element                        //t[normalize-space()='Guaranteed Tax Free Payout for 25 Years']
+        Sleep   2s
+      Wait Until Page Contains Element      //span[normalize-space()='click here to enquire']
+      Click Element                        //span[normalize-space()='click here to enquire']
+      Sleep  2s
+      Input Text      //input[@placeholder='Enter your Message here...']    07-10-1998
+      Click Element          ${SEND-INPUT}
+      Wait Until Page Contains Element      //p[contains(text(),'Thank You for your interest. Team Trovity will get')]//a[normalize-space()='Click Here']
+      Click Element                         //p[contains(text(),'Thank You for your interest. Team Trovity will get')]//a[normalize-space()='Click Here']
+
+Unnathi Plan
+      Wait Until Page Contains Element     //t[normalize-space()='Unnathi Plan - Child Education / Wedding']
+      Click Element                        //t[normalize-space()='Unnathi Plan - Child Education / Wedding']
+      Sleep   2s
+      Wait Until Page Contains Element      //span[normalize-space()='click here to enquire']
+      Click Element                        //span[normalize-space()='click here to enquire']
+      Sleep  2s
+      Input Text      //input[@placeholder='Enter your Message here...']    07-10-1998
+      Click Element          ${SEND-INPUT}
+      Wait Until Page Contains Element      //p[contains(text(),'Thank You for your interest. Team Trovity will get')]//a[normalize-space()='Click Here']
+      Click Element                         //p[contains(text(),'Thank You for your interest. Team Trovity will get')]//a[normalize-space()='Click Here']
+
+

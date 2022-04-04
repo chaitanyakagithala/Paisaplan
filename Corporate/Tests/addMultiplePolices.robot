@@ -33,14 +33,22 @@ Adding policy Manually
           Click Element          ${SEND-INPUT}
           Input Text             ${SXP-INPUT}      01-02-2023
           Click Element          ${SEND-INPUT}
-          Wait Until Page Contains Element         //button[@value='Submit']
-          Click Element                            //button[@value='Submit']
-          Wait Until Page Contains Element         //button[@value='upload']
-          Click Element                             //button[@value='upload']
-          Upload File
-          Wait Until Page Contains Element     ${No}
-          Click Element                        ${No}
-         Wait Until Page Contains Element        //a[normalize-space()='Click Here to go to the home screen']
-         Click Element                           //a[normalize-space()='Click Here to go to the home screen']
-         sleep     5s
-         Close Window
+          Wait Until Page Contains Element        //button[@value='edit']
+          Click Element                           //button[@value='edit']
+          Wait Until Page Contains Element        //button[@value='premium']
+          Click Element                            //button[@value='premium']
+          Input Text             ${SXP-INPUT}         100000
+          Click Element          ${SEND-INPUT}
+          Wait Until Page Contains Element          ${Yes}
+          Click Element                             ${Yes}
+          Wait Until Page Contains Element          //button[@value='claimAmount']
+          Click Element                             //button[@value='claimAmount']
+          Input Text             ${SXP-INPUT}         12151
+          Click Element          ${SEND-INPUT}
+          Wait Until Page Contains Element         ${No}
+          Click Element                            ${No}
+          Wait Until Page Contains Element         //button[@value='skip']
+          Click Element                            //button[@value='skip']
+          Wait Until Page Contains Element          ${Yes}
+          Click Element                             ${Yes}
+          Multiple Polices

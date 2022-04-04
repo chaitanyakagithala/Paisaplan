@@ -2,7 +2,8 @@
 Resource    ../Resources/corporateRes.robot
 Library       SeleniumLibrary
 *** Test Cases ***
-Login User
+Claim History
        Open Website
        Login User
-
+       View all
+       Claim History
